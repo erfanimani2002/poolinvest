@@ -5,14 +5,34 @@ body {
     min-width: 390px;
     margin: auto;
     padding: 0 28px;
+    position: relative;
 }
 
+header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 51px 0 ;
+}
 
 .header-logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);}
+
+.goback-btn {
+    position: absolute;
+    left: 0;
     display: flex;
-    justify-content: center;
+    align-items: center;}
+
+.goback-text {
+    display: flex;
     align-items: center;
-    padding: 51px 0 ;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 500;
 }
 
 .signup-box {
@@ -27,7 +47,7 @@ body {
 }
 
 .head-title h1 {
-    font-size: 27px;
+    font-size: 28px;
     font-weight: 700;
     line-height: 100%;
     color: #000000;
@@ -91,58 +111,40 @@ body {
     gap: 19px;
 }
 
-.nameandemial input {
-    display: flex;
-    height: 48px;
-    border: none;
-    border-radius: 9px;
-    background-color: #F8F8F8;
-    padding-left: 18px ;
-    color: #8f8f8f;
-}
-
-.nameandemial label {
-    font-size: 16px;
-    font-weight: 500;
-    color: #212121;
-}
-
-.passwords input {
-    display: flex;
-    height: 48px;
-    border: none;
-    border-radius: 9px;
-    background-color: #F8F8F8;
-    padding-left: 18px ;
-    color: #8f8f8f;
-}
-
-.passwords label {
-    font-size: 16px;
-    font-weight: 500;
-    color: #212121;
-}
-
+.nameandemial input,
+.passwords input,
 .numberandrefer input {
     display: flex;
     height: 48px;
-    border: none;
+    border: 1px solid transparent;
     border-radius: 9px;
     background-color: #F8F8F8;
     padding-left: 18px ;
     color: #8f8f8f;
+    box-sizing: border-box;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
 }
 
-.numberandrefer label {
+.nameandemial input:focus,
+.passwords input:focus,
+.numberandrefer input:focus {
+    outline: none;
+    border-color: #3D36BF;
+    color: #3D36BF;
+}
+
+.nameandemial label,
+.passwords label,
+.numberandrefer label{
     font-size: 16px;
     font-weight: 500;
     color: #212121;
 }
 
 
-.numberandrefer span {
-    font-size: 12px;
-    color: #7e7e7e;
+input::placeholder {
+    color: #9D9D9D;
+    font-size: 16px;
 }
 
 .agree-terms {
@@ -151,6 +153,10 @@ body {
     gap: 14px;
     font-size: 12px;
     font-weight: 500;
+}
+
+.agree-terms a {
+    margin-left: -10px;
 }
 .agree-terms input,
 #remember{
@@ -228,4 +234,20 @@ body {
     color: #4C4C4C;
 }
 
+.option {
+    font-size: 12px;
+    color: #7e7e7e;
+}
 
+.req-star {
+    color: #DA4444;
+}
+
+.hidden-link {
+    text-decoration: none;
+    color: #7A7575;
+}
+
+.bold {
+    font-weight: bold;
+}
