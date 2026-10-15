@@ -251,3 +251,19 @@ input::placeholder {
 .bold {
     font-weight: bold;
 }
+
+.orange {
+    background-color: #EA6227;
+}
+
+.blue {
+    background-color: #3D36BF;
+}
+
+.error {
+    color: #E73434;
+}
+
+.completed {
+    color: #4BA71F;
+}
