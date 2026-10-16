@@ -260,6 +260,10 @@ input::placeholder {
     background-color: #3D36BF;
 }
 
+.pink {
+    color: #FF7979
+}
+
 .error {
     color: #E73434;
 }

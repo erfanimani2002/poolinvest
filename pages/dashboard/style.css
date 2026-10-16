@@ -13,6 +13,8 @@ header {
 
 .header-right {
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 12px;
 }
 
@@ -27,17 +29,13 @@ header {
     width: 40px;
 }
 
-.notifications svg {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-}
+
 
 .notifications span {
     display: flex;
     position: absolute;
     right: 0;
-    top: 0;
+    bottom: 18px;
 
     align-items: center;
     justify-content: center;
@@ -220,3 +218,270 @@ header {
     gap: 12px;
 }
 
+.overall-wrapper {
+    display: flex;
+    font-size: 20px;
+    font-weight: 700;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.overall {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    gap: 16px;
+
+    margin-top: 82px;
+
+
+}
+
+.overall-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: left;
+
+    box-shadow: 7.66px 8.62px 20.11px 0 #00000008;
+    border-radius: 14px;
+    background-color: #FFFFFF;
+
+    padding: 20px 30px;
+    width: 100%;
+    gap: 28px;
+}
+
+.special-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: left;
+
+    box-shadow: 7.66px 8.62px 20.11px 0 #00000008;
+    border-radius: 14px;
+    background-color: #292929;
+
+    padding: 20px 30px;
+    width: 100%;
+    gap: 28px;
+}
+
+.overall-card .overall-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #C1C1C11A;
+    border-radius: 9999px;
+
+    width: 54px;
+    height: 54px;
+}
+
+.overall-card .overall-details {
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+.overall-card .overall-details h3 {
+    display: flex;
+    font-size: 16px;
+    font-weight: 500;
+    padding-left: 12px;
+    height: 18px;
+    align-items: center;
+    border-left: 1px solid #9B9B9B;
+    color: #5E5E5E;
+}
+
+.overall-card .overall-details span {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.special-card .overall-details span {
+    font-size: 24px;
+    font-weight: 700;
+    color: #ECECEC;
+}
+
+.plans {
+    margin-top: 82px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 14px;
+}
+
+.plans .wrapper {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 7px;
+}
+
+.plans .wrapper h2 {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.plans .wrapper a {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.black-card {
+    background-color: #292929;
+    box-shadow: 8.87px 9.97px 23.27px 0 #0000000F;
+    border-radius: 16px;
+    color: #FFFFFF;
+}
+
+.white-card {
+    background-color: #FFFFFF;
+    box-shadow: 7.49px 8.43px 19.67px 0 #0000000F;
+    border-radius: 16px;
+    color: #0F0F0F;
+}
+
+.plans .card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: left;
+
+    padding: 30px 20px ;
+
+    width: 100%;
+    gap: 18px;
+}
+
+.plans .card .label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+    margin-bottom: 16px;
+
+    width: 148px;
+    height: 52px;
+
+    background-color: #3D36BF;
+    color: #FFFFFF;
+    border-radius: 8px;
+
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.plans .card .details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.plans .card .details .name {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.plans .card .details .value {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.plans .card .date {
+    display: flex;
+    gap: 14px;
+}
+
+.investment-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+    max-width: 600px;
+    margin: 103px auto 80px;
+}
+
+.invest-card {
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 6.17px 6.94px 16.2px 0 #0000000F;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.invest-card .content {
+    padding: 20px 8px;
+}
+
+.invest-card .content .info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.invest-card .content .info .name h3 {
+    font-size: 12px;
+    font-weight: 700;
+}
+.invest-card .content .info .name span {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.invest-card .content .stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    white-space: nowrap;
+}
+
+.invest-card .content .stats span {
+    font-size: 12px;
+    font-weight: 700;
+    color: #111111;
+}
+
+.invest-card .content .stats .change {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.invest-btn {
+    width: 100%;
+    border: none;
+    background-color: #3D36BF;
+    color: #FFFFFF;
+    padding: 6px 5px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.bitcoin-card {
+    grid-column: 1 / -1;
+}
